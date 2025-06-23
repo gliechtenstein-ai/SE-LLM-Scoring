@@ -7,7 +7,7 @@ It uses OpenAI models to score performance across customizable metrics, extract 
 ---
 ## Test Workbench
 
-The project has a jupyter notebooks used to test all model Variants. The real results are not published here. Here we have just an example using a anonymized transcription.
+The project has a jupyter notebooks (Experiments.ipynb) used to test all model Variants. The real results are not published here. Here we have just an example using a anonymized transcription.
 
 A/B testing of model variants:
 * Vanilla GPT: A baseline model without augmentation, generating outputs solely from its pre-trained knowledge.
