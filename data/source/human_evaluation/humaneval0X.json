@@ -1,0 +1,23 @@
+{
+  "transcript_name": "anonymized call 01.txt",
+  "clarity": {
+    "score": 4,
+    "explanation": "The message was communicated clearly to the customer, but there were a few instances where more concise explanations could have been provided."
+  },
+  "engagement": {
+    "score": 4,
+    "explanation": "There was good interaction and active listening with the customer, but there were moments where more engagement could have been demonstrated."
+  },
+  "relevance": {
+    "score": 5,
+    "explanation": "The content of the demo was highly relevant to the customer's needs and context, addressing specific questions and concerns effectively."
+  },
+  "structure": {
+    "score": 4,
+    "explanation": "The demo had a logical flow and organization overall, but there were moments where the structure could have been improved for better clarity."
+  },
+  "confidence": {
+    "score": 4,
+    "explanation": "The speaker demonstrated professionalism, tone, and delivery confidence throughout the demo, but there were moments where more assertiveness could have been shown."
+  }
+}
