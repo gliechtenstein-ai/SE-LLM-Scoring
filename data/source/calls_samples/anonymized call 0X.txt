@@ -1,0 +1,266 @@
+6:58 | Luiz
+Okay. So let's start sharing my screen. Can you see a dashboard? 
+
+7:04 | Denis
+Great. 
+
+7:05 | Luiz
+Okay. We're gonna start talking about like a defined territories in Quota. But before I go, to where we're gonna do this, I just want to show what's the angle we're trying to achieve here. So I'm sharing here. This portal is where we can communicate with the partners for instance. And then I have this target. Of course, I can provide more information about this target. So what is coming from way? I believe he can do this? What is the potential of his Territory? And what I want to show is where we can create this number and how we can define the Territory for this person. Okay. So given a step back, this is the platform is the workbench where, the administrator will define the territories that defined quarter for the target company, including for jilin, con, Johnson, that person that I just showed to you and the way it works, it gives you a visual representation of your go to mark strategy. You can see at the top here, you have a tile that represents all the tags that you want to track. Of course, this is configurable. I have for example, here new business renewal services itself. But you can change that. You can decide with me because you want to track every year by the way the entire configuration here is create a new code approach. So every year can just copy your last in Syad, start to change the things that you want to change, maybe add the new channel, add a new metric. You can do all those change to configure… you have here the metrics and also some information about these metrics. Of course, the target, the number that you want to hit in each one of those metrics, but also historical information, how those metrics perform last year? How is the tracking for the last 12 months? We can calculate things for you like the predict potential for this match for the next fiscal year. Everything to give the ability for this administrator to understand if the number that you need to allocate for the resources is make sense? You're not, I know you said you don't want to talk about integration. So we're not gonna go deep on that. But the way this information flows through our platform is through a ELT layer, we have integrations capabilities in our platform to easily connect with other solutions. Just I'm sorry just to show here a list of… all the connectors that we have. So we can easily connect through flat files, recipis, extend the connector to other platforms, not just connect and export the data, but also prepare the data and clean the data to make sure that the data that you're in here. You can trust to make sure that all the process is building on top of data that you can believe is correct… and this is everything done through this data manage layer that we have that if you want to can go deeper in another session. 
+
+10:16 | Denis
+So that's connection with this. Ap is surely there, I'm assuming, right? 
+
+10:21 | Luiz
+Yeah. You have like SAP, usually, what we do we have like use the standard connectors with is with SAP or in some case flat files. It depends of the architecture is something that we decide during the project, usually with our customers, but we have plenty. Yeah, of course. 
+
+10:42 | Denis
+Behavior. 
+
+10:44 | Luiz
+Yeah, we have plenty of customers using success factor using SAP. So, yes, that's something that's not new. 
+
+10:51 | Denis
+Okay. 
+
+10:55 | Luiz
+And, and by the way, I have my script here but feel free to raise any questions during the demo here. Interrupt anytime if you want. 
+
+11:04 | Denis
+I'm not sure. Luiz don't work. I, I'll do that. 
+
+11:07 | Luiz
+I love it. I prefer the engagement. So as you can see, I have the top level here with all the big numbers for my company. And then I start to break it down here first between geography and then I have a break down by customer segment. But this is just an example. You can have different organizations. You can change this based on the configuration that you believe that we build the best to approach the market of our organization. You can have a first lay like I would say by channel and then you have like customer segment or you can have like my product. And then by channel, you can decide how you want to organize to see the summary of the top numbers here, how you want to consolidate the targets for each one of those style. We call those targets battle cards. But ultimately, what they represent is a business unit. Let's say I have an example here in Europe and I have all my enterprise direct… customer segment. And then I can decide what kind of strategy I want to put in place for this business unit. And that's the beauty of the application because I can have here a structure. I'm gonna talk about it like some, but I can have a completely different strategy for another business unit. But even though I have a completely different approach to go to mark for these business units, I still can see the consolidation of those targets and see how they are affecting the coda location for my company. Does it make sense? Yeah. 
+
+12:37 | Denis
+Yeah. So just checking on the targets, you know, because everything starts with a number and then gets breaking down, we understood. But then there might be the case. Is there instances where we don't really have one number or one forecast and stick to like in different setting, we're using a different type of forecast. So imagine Europe? Yes, you know, they agree forecast from previous year to this year was 100,000 whatever. But then, you know, when you break it down country per country, everyone has a breakdown of the 100,000, but then in the UK, for whatever reason, they decide to want to shoot for something higher. So, is that? 
+
+13:14 | Luiz
+Definitely. 
+
+13:15 | Denis
+Configurable and manageable with within, the solution, I'm assuming it doesn't have a way to reconcile, to the forecast that you put there. Yeah. 
+
+13:24 | Luiz
+You cannot just have a different target for each segment of your business unit. But also, you can use different ways to do the stop down location. Because when you do the top down location, you may want to use a forecast or maybe for a different segment, you want to use the pipeline, you can decide a different number, a different metric to use, to do the breakdown to locate in each branch of the street. 
+
+13:49 | Denis
+Okay. Got it. 
+
+13:52 | Luiz
+So let's take a closer look into the street because before talking about Quota, I think we should talk about territories when talk about territories, people get sometimes confused thinking that's something about like geographies. And sometimes it is not, sometimes your Territory is just like, a product or could be a customer segment or could be like a mix between those two metrics. Basically, what you're trying to define is the kind of parameters to set the portfolio of accounts that a partner can work with. And here, we have an example where we start talking about like named accounts. And then you can organize for naming accounts for a specific reason or not. And then you have here all the rules that you define. In this case customer accounts, a simple rule, get the customer account and say, this is the account that should be tied to this portfolio to this Territory for this partner or you have like I have like, the industry of the account. So we have a new account for the public sector and you have like a partner that is specialized in this sector. I want to make sure those accounts will be assigned to them. You can create those rules. So don't need to worry about assigning accounts to this individuals because everything would be managed by rules. Of course, we can use the geography reference when you're like using zip code. So you want to use the UK. And then you use the zip codes, define which accounts should be tied for a specific Territory. And I would be taken care of this Territory… when I'm using the zip codes, by the way you can see this information, plot into a map. Let's say, I want to check… in this case, here, I have the entire Europe. So I can see all my territories in this region, right? I can see other things like the number of accounts I have in each Territory. I can see the volume of business I have in these regions. If I want to see not a specific Territory but a selection, I want to see how they are in this specific region here, getting more than one Territory. I can see the number of accounts, the volume of business I have these territories in this interface is not just to visualize data, you can do, the change of your territories and carpet territories. Through this interface, you can reassign territories, creating new territories. You can reassign an account, you can get an account saying, yeah, I know these account is in this region, but I want to assign for the different Territory. You can do all this management through these interface is not just reporting. Does it make sense? 
+
+16:35 | Denis
+So, yes, does make sense. How many customers farmer do you have across your portfolio which are actually actively using this distribution for Territory alignment? If, if I can ask. 
+
+16:50 | Jane
+So, yeah, I was gonna say I had to get some specifics on the breakdown. So we've got globally 700 and so I need to understand in terms of specific functionality. So that can be something I can ask across our csm's and get some feedback for you if that would be of use. 
+
+17:07 | Denis
+Also specify a. 
+
+17:08 | Jane
+farmer? 
+
+17:09 | Denis
+The ones that I'm asking for that specific detail is because, we already had. So he bring the boundaries a little bit of, you know, Incentive compensation into what we handle across our Territory management stream. And, and we have a separate solution for that, and a separate tool that only has that specific purpose. And the reason is because from our farmer business, also the customer alignment that is generated out of the trial alignment of course, and then out the customer alignment. Then also like, the omnichannel Plans follows through and it's all like a whole journey which is a food interconnect, of course. But, but then, you know, there has to be also the view on the customers and of course, the customers for us. It's in our CRM in orbit and it's data point that we purchase from a pov from one key. So it's a very peculiar setting. The one we have, you know, we don't have our internal and graphics per SE. You know, everything is coming, from this external provider. And in farmer is fairly straightforward fairly consistent across the board because, you know, it's just impossible to map out all our customers in a way because we ship to hospitals or we ship to a customer clinicians. Yeah. And that has to be reflected, you know, when you talk about potential when we talk about all this stuff, this is all things, of course, cascades from that level of detail which I don't think we will be able to embed in here just because those are not our customers that actually purchase. Those are, our interactions per. 
+
+18:46 | Jane
+Yeah. And so, and that's a great point. And so I can only really speak to my own experience, but I worked with ximabiomet, so they are innovation, it's kind of medtech around orthopedics but they had a very similar use case and they are using Varicent, sales Planning Incentives and the AI piece that sits in the middle. And so they have the same case where they were looking at. They had prospective hospitals, doctors, clinics that they won't get selling to, but they wanted that to be within their portfolio to understand potential. So we element of current customers and how we calculate potential. But then they had a host of detail and potential client base. They also input into the system to understand, okay, here's what we sell and based on similar sizes, you know, range and locations, this is what we can expect. And this is how we segment and dice it up across our sales teams so we can explore that in some more detail. But yeah, I, I've worked with a couple of cases that they had similar use cases. 
+
+19:48 | Denis
+As you say, that looks really cool. I to say, you know, and it's surely very intuitive to be used probably even more than the one that we currently have. But that's why I'm asking, I know the level of normality and details that our industry, it actually requires, you know, possibly some trade off from the visual interface. 
+
+20:10 | Jane
+I'd say pharma more so than most. So, I know, you know, insurance companies and telcos that also use our sales Planning. And I'd say pharma actually because of the nuance, and, you know, because only certain sales agents are able to sell certain products. I know there's a lot of complexity in that. So, yeah, certainly happy to explore in more detail when we've got a little bit more time. 
+
+20:31 | Denis
+Yeah, sure. 
+
+20:34 | Luiz
+Okay. Moving forward here, I know I don't have much time today. I want to show like the aspect. So besides like where carbon the territories designed, the territories, it's important to have an idea if they are fair or not if they are balanced or not. So we have a way to analyse your territories. You can choose a metric to compare them. So in this case, I'm using historical data, but you can use like to predict potential like what we're saying to compare those territories and I can select which kind of branch I want to compare. So maybe I want to take a look in UK or maybe I want to take in I or how it's like the balance in france. And every time I select a group of territories here can see how balanced they are. Everything below the bar is something below the average. Everything above the bar is above the average. I have here the metric that I'm selecting at the number of accounts. And then I can decide if I want to change something. Let's say, maybe I have two main accounts in this Territory and maybe I want to move for this one here. So I can decide which accounts. I think it makes sense to move for this another Territory. And then I can make it more balanced. Of course, I don't need to do it manually. You can also use the optimization tool. They're gonna do this kind of changes for you automatically. So they're gonna look for make all your territories more automatically. And you can even create scenarios. You can start to manually or run the optimization. And then you can compare those scenarios. You can create a copy of this all configuration that you're doing here. You can create a new scenario from scratch and you can manage your scenarios or compare them. And then you can take a look how they are performing. So let's say I have here an example where I can see the suggestion of the optimization and the default Territory, how they are configured. So I can decide which one I want to use to share the code in the end of the day with my partners. Any questions here about balancing or optimization scenarios? 
+
+22:49 | Denis
+Again, that's a different use case for us again and that it's within the previous one. I was mentioning, you know, within the Territory alignment piece, we also run this kind of engines but again, the data points because it's every country is different for us. It has different level data ground already that this is where the challenge get like accounts because we need to be able to failure the solution to run this optimization engine based on data that we have. But, you know, don't worry about that. Those are our, but I do understand where it's coming from. Yeah. 
+
+23:27 | Luiz
+That's a valued point but have in mind what I said before, you can have even the entire Plans site for each country if you need. So we can have like different strategies and use different data points, datasets metrics. You can have different strategies for each business units, or each country to make sense for each one of them. You know, you're still gonna have the consolidated vision of everything but you can have like a different approach for each one of them. 
+
+23:52 | Denis
+So in your client base, this is like a selfservice solution that you offer mostly, or you also have some managed service where, you know, you're also offering some how the expertise, to run this kind of stuff. 
+
+24:05 | Luiz
+So, the entire option the philosophy that I have on building our solutions is to give sufficient for our customers. So we create things that business users can manage. Now, they are case they don't have the advantage where they don't have like the research to manage it. Sometimes they prefer to hire like partners to manage the solution to them. We also can provide some services besides implementation because during the implementation, we're gonna help you to do the first implementation but also transit the knowledge to you. So it depends on the appetite that the customer has to ingest this knowledge to as, to get this knowledge to make them their own and start to manage the solution by themselves. The solutions prepare for that. It's it's up to you to decide how we want to manage it. 
+
+24:52 | Denis
+Clear. Thanks. 
+
+24:54 | Luiz
+Welcome. Now, once I'm happy with my territories when I have like removing the silence between those processes, defining territories in the fine Quota, 10, you have everything in the single platform. I think start become easier because now to set the Quota for those structures that I created here, it's just a matter to decide the branch that I'm using here, the number that I want to allocate. So in this case, I have those 50,000,000 that I need to allocate. I can use a even if split is like a poor maybe or a simpler choice to do, the allocation or I can do something better. Maybe I want to allocate even a little bit more than what I get because I have the 50,000,000, but maybe someone is leaving someone is not hitting this number. So I need to allocate a little bit more. And maybe I want to select a different metric. Again, you can create those metrics here. It's configurable. So maybe I want to use instead even split. I want to use the predict potential to allocate my Quota for my entire branch here. And I was saying before your example, you gave maybe for UK, I want to do something different. So I want to get for UK here, and give a different number and do the allocation using a different metric. So I can come here and decide that for UK are gonna locate a little bit more. 
+
+26:14 | Jane
+A. 
+
+26:14 | Luiz
+little bit less and I gonna use a even split or I gonna use the historical data, another forecast metric. I can use it like a different metric to split. So I got the 8,000,000 here. My baby, I want to do like 10. So I can do this like for this branch specifically or let's say for many accounts, I want to use the pipeline as a metric to decide the quarter. So it's up to you how we want to use the metric is just as straightforward as I was showing to you to decide the metric, the number and how we want to allocate the quarter. 
+
+26:45 | Denis
+And, and you said, those ways of allocating they are configurable and do you have a library that we can pick and choose from a standard or a has to be customized during implementation? 
+
+26:59 | Jane
+Well, the standard one? 
+
+27:00 | Luiz
+Would be like even split and historical data. I would say all the other metrics is super easy to configure. And then you need to decide where you want to get the data. If you have the data, we can just import it or you can leverage or ELT I capabilities to decide if you want to do something simpler. Like I want just to get the historical data and put like five, 10 percent on top of that. It's super simpler to configure that inside the solution or if you want to do something more elaborate, like I want to use… a linear regression, to predict the potential for the next fiscal year. I want to use that. So we can help with both if you have the data or if you want us to create, this metric for… okay… of course, when I'm doing this, I still can come here and do the fine tuning and do the adjustments for the comments. I can do the opposite. Now coming from a button app and start asking managers to collaborate with me. I can share this quarter with them and then I can start a Workflow to get their input. So the sales leaders can go come here and do that Manual adjustment and do the fine tuning for the region. And then I can as administrator just come here and approve those changes they are suggesting and that it would be like the end of my process where I'm gonna share the final territories in Quota with my team… any? 
+
+28:33 | Denis
+Questions here about so… feedback? 
+
+28:40 | Denis
+Many because we have quite a complex Incentive scheme and everyone is different somehow. Well, not really we have a defined way… to define a guidance that's why I was talking about the library because then we can import our own library, create that we do somehow and then give that visibility to the library and allow some users to do the pick and choose. We do it ourselves. Normally, it's kind of centralized today or long run. If you wanna start this centralising the whole activity operations around this, then we can also allow other users to stay within the boundaries of framework that we give for search, for certain schemes. But I can see the system allows that. So also, yeah, okay. All about see. 
+
+29:27 | Luiz
+I'm just. 
+
+29:28 | Denis
+curious about, the implementation timelines for like situation like ours where we need to migrate something around 86 teams across 36 countries, you know, if you have any experience, or any, anything on that scale or similar scales on how, you know, how long would that take, to migrate, the whole scale? 
+
+29:50 | Luiz
+Of course, to give you like a proper answer, we need more information, go through like more on assessment. But I can tell you that usually projects like if you think about phases, we can have like a first initial phase that will take like between something between three to six months, that usually the timeframe for an issue implementation. But everything depends of this assessment, we need to understand better, what would be the scope and then it will provide you a better answer to your. 
+
+30:21 | Denis
+You can serve by this time. I thought I was gonna be fast. 
+
+30:26 | Jane
+Yeah. 
+
+30:27 | Luiz
+I. 
+
+30:27 | Jane
+did the best. 
+
+30:28 | Luiz
+We have some situations where we implemented it even less than that. It, it depends on, the scope. 
+
+30:35 | Denis
+Of course. Yeah. 
+
+30:37 | Luiz
+Yeah. So moving forward, let's go back for that visualization or talking about. So once you share the Quota with the seller, now they have more information about it because it's not giving them a number, you can show the Quotation of the Territory. You can show where are their accounts, and everything that I'm showing to you here is configurable. You can change this instead like for zip codes, you can change it for channel for region. You can decide the best way to communicate the targets to the partners. So they understand what you need to do. The idea is not just to give a number, but giving them a path to hit the number. What you need to do, what is the more important accounts? It's it's drive behavior is if you have like your compensation plan Align with the strategy that you want to build in place, everyone's gonna be happy they are working towards the targets the company want to hit that's their over idea. 
+
+31:35 | Luiz
+And once I have my targeting start to work towards my target now, I want to track the progress of it. So, yes, I have, this is my target and I'm in a good situation here because my target is three point 45, but they forecast like three point nine four. So probably gonna hit my number and I'm gonna make my commissions. I can see how much I'm gonna get in this period, how much I've got in this year. I can see this plot like in charts to see the projection. So that's what I am right now. I mean already in year I'm september. So this is the projections for the rest of the year, both revenue commissions. But the main message for what is seen here is those reports are configurable. There's no code involved here. You can change all these visualizations based on the profile in the country and the type or the Staff they're accessing this portal. They're gonna have a portal that makes sense to them to help them to do their job. Like in this example, here, they have a composition plan. They have accelerators in some point. So you can show the gap where they're gonna hit that. We show that gonna boost, the money that got and the end of the month in their pocket. So you show how much they need to do what you need to do to hit this number, and get this accelerator. So it's all about drive behavior… and transparency as well, right? So I'm getting this number here that's what I'm gonna be paying this month, so how it was calculated. So you can create layers to communicate it with them, breaking down these numbers. You can plot these in charts. They are interactive. So want to track a specific type of payment. You're getting to the year, you can see the transaction details to see like specifically what you're getting from each transaction, what you're not getting for each transaction, you can configure explaining then why they are not being paid for a specific transaction to reduce the amount of inquiries you have for specific transactions with an explanation. Maybe they will be okay. I see why I'm not getting this money. Maybe I forgot, to give some documentation or get to a discount. So you can explain why they are getting commissions for a specific transaction. And if they don't agree, they can open inquiries in this portal. And you can configure a Workflow, you can decide what kind of form and feels they need to fill here to provide the minimum information you need, to a, their inquiry. 
+
+34:04 | Luiz
+Of course, self calculators, they, a, this is just an example. So they can see how it was a fact, if they hit a number or if they close a deal, how it can affect the final payment, the rules of the game, right? The plan document. So you can embed videos explaining how it works, what they need to do. So you can have all the details about their composition plan and that could be like specifically for each one of them. You can get a Workflow to get their approval. So the terms and conditions, everything explaining here to them. 
+
+34:43 | Luiz
+Any questions here from the partner perspective? Like for a few user perspective? 
+
+34:50 | Denis
+I can see why it takes three to six months for implementation because it's extremely customizable based on, you know, what you like to display what you like to show, then it does make sense that there is an effort initial effort which is quite substantial, to make it happen. But then in theory, once you set up, you can go to go for quite some time and you can do so, when you are then required to changes, I'm assuming like stuff as, you know, the admin can probably like change the text here, you know… but then when there are substantial changes, you know, that has to go back to you and do them together or not. 
+
+35:31 | Jane
+No. So it's the same don't. Go ahead. I was gonna say no. So it's the same approach as Luiz was about to say with Planning, we promote self sufficiency. And so even on the back end which we will go on to show, I know we don't get much time to show the back end and, 
+
+35:48 | Luiz
+is. 
+
+35:48 | Jane
+accessible for you, there's nothing that will be restricted in terms of what you can't change, update and manage on a day to day. You will not be relying on us as a vendor. We have an option to provide managed services or as Luiz mentioned partner with, you know, a SI that you're using today, or introduce you to a partner. But the idea is that if it's day to day changes, if it's big significant one year changes, perhaps you might want to leverage us and say, hey, I want to send, check the changes I want to make sure that this is logical and this is best practice, but you will have the skills to do this within your own team. Yeah. 
+
+36:23 | Luiz
+Yeah, in some way, you can just sign the amount of help you need or you want. Yeah. 
+
+36:29 | Denis
+Very good. So. 
+
+36:32 | Luiz
+Just let me show a little bit more off the portal here before I move to the back. You know, administrator a bit. I just want to show the perspective, a different perspective of the Salesforce because we also have the perspective of a manager. I know you have also, the operation managers or the sales leaders. They may want like a different perspective. So I just want to share this perspective as well as you can see. Now, I'm login with a different user. It's now, she also has a quarter, a bigger one because she is leading a team but she's not in a good spot because she's short like the forecast for the end of the year is like sorting almost 2,000,000 or a little bit more than 2,000,000. And she needs to fix that. The idea is to give her tools to work productively and fix the problems before they happen. So same thing here. I can see the projections. But in this case, I want to take a closer look and see what's happening with my team, why I have this 2,000,000 euros in gap to my quarter by the rest of the year. And here providing some more details about this gap is the projection for the rest of the year. The idea is to give like visual insights them, so the pink bar represents the gap as a manager december as should never has like a pinky bad. If I see a pinky bad in december, I have a problem. I need to fix that because see here's the 2,000,000 that I have in as a gap for my fiscal year. And then I can take a look where's this gap in coming from? I can see like for my team like Johnson, the guy that I was just showing a few minutes ago, he's oven performing his gap is negative. He's doing more than I was asking to him. But into all the team members here like Lina, maybe I want to take a closer look, to see why I have this gap here. And then the idea is to give like coaching reports. It's not like gating up on Lina is to help her to achieve the target. Because when I look at the numbers in some point, she is doing like really well. She's closing deals, and trying to understand the problem, I can see the pipeline is the problem. She's closing deals, but she forgot to work on her pipeline. So as a manager before the end of the quarter, what I need to do is to approach Lina and say, hey Lena, you're doing an amazing job, you closing deals. But if you don't work on your pipeline for the last quarter, you're gonna be short on your number. So that's the idea, to help everyone, the managers and the sellers to achieve their numbers. Because since you have a flexible solution to implement the strategy that you want to put in place, you want them to work, Align with the strategy… this port is not just for reporting, you can also have like payment foundation can have like forms and create workflows. In this example, here… it's a payment approval where the manager has some saying the final payout, maybe she has like a budget where she can add a little bit of money for special for a reason for a comment. But what more important here is that you can have these kind of forms where you can create workflows and get approvals to these forms. When you have this kind of process… in your business requirements. Any questions so far? 
+
+39:58 | Denis
+No, okay. 
+
+39:59 | Luiz
+So I see that we are like on top of the hour but I still want to show something that's important because I was working recording and you say something very important. I wish all the people understand that which is once you have a platform like that, it's not that you're working less, but now we have the opportunity to work better because instead to like be working on the calculations and the integrations and stuff like that, you can start to analyze how effective is your compensation plan, how they are performing, how much you are paying for each one of those compensation Plans, how they are improving sales. You can see this like by region, how they are improve in chaos by channel. So you can decide if you need to do like a change a compensation plan because they are not like improving what you was expecting to do. So we have like a compensation plan that's paying more for a specific channel. But you're not seeing progress sales in this channel. So maybe you want to change that. So this is just an example how you can with the same tool, those kind of realizations to manage the performance of the compensation plan that you have. Like how is the budget consumption? So far? If you have any outliers, it could represent two things. Maybe someone is doing like an outstanding job and then you need to understand what they are doing to try to replicate this kind of behavior with the rest of the team or maybe, they found a loophole in the composition plan and you need to fix that. So it's all about given information. So you can make your compensation process better. We're not going to have time to go through all the modules here today, but I want to show a few things like the process which is a customer way, to create paths inside the platform to make your life easier. So you don't need to worry about where I need to go. You can go and create for my company that's what I need to do regarding like the automation regard the flexibility to configure a new plan. What is the data menu? So you can create those leads and it's kind of work like a shortcut for the things that you need to do and make sure that you are looking at this. The platform runs mostly. So when it comes to automation, we can like automation that are created by business events. We have like automation that you can schedule things to run automatically every day or on a weekly or monthly basis. It depends how we want to configure it. We're not gonna talk about data or the conclusion because I don't have the time, but everything here is about flexibility. We don't in force our data model to you is not like, okay, now, I need to shape my, a, this format to send to iron is the other way around, we're gonna shape or plan to accept the data that you have. You're gonna be able to create all the calculation lodge for each country for each business units, the way you need. And in a way that is possible to business unit, business users to manage… just to give an example, let's say you have an Workflow, you want to create like a payout Workflow, everything is creating a visual pro. So you can see the flow who's been notified, what they are deciding. You can track the history if someone is have like a painting action and you can just duplicate this Workflow and change things. If you need a different payout process for a different region, for a different country, I don't need to start from scratch. Everything is create to make easier life when changing configurations here and creating… the, all the configurations, all the workflows and calculations that you need to support your process? 
+
+43:36 | Denis
+Can I, can I check, do you support? And I think I know the answer and do you also have support for qualitative metrics? You know, like mbo objectives and that's also tracked with the same solution? 
+
+43:51 | Luiz
+Yes, of course. So it's not all about like quantitative. If you have some like I want to measure like in, on, I'm a manager here and I want to say how they perform like in specific objective like leadership, if they did all their training, how they are as a team work. So I can measure those metrics as well. And if I want taking use this in part of the compensation plan, it could affect even the payout you know, way if you want or you can have like a bonus, have like a different compensation plan, whether they hit those metrics, then maybe get like, a bonus like a trip in the end of the year. It's not about money. You can also give the kind of compensation to the team. We have the flexibility not just with the metrics but also with the output. 
+
+44:40 | Denis
+Okay. 
+
+44:43 | Jane
+So just to add there, we work with quite a lot of companies that for example, use NPS score. So based on the customer satisfaction results, they get NPS results and then that's what some people are bonused on and that's based on a more of an embryo framework versus a quantitive measure. But yeah, I was seeing that one quite often. But there are quite a few different use cases that we see people customers use. 
+
+45:07 | Denis
+Right. Understood. So, I. 
+
+45:11 | Luiz
+see how? 
+
+45:11 | Denis
+The, the solution you have for our setting is blurring the boundaries between my Incentive compensation tool, the Territory alignment solution that we have, the reporting platform that we have in place as well as our talent system for mbo management today. In our current setting, these are four different systems that we have. And yes, there is connections and dependencies, but they are work study from different people. I handle some of those but not all of them. The reporting part in particular is something which is fully in charge for our team. Though, of course, within Incentive part, I do provide some level of visibility about this stuff but it's somehow much wider more complex best for us to manage in our current solution. You know, I'm far from wanting, to embrace that and become. Okay, then, you know, you're running short in your objective. This is what you need to do to fix it because, you know, I like to give some proposals for sure but that doesn't need to come from the Incentive too. You know, that's not part of the other setting that. I want to create because that will create some duplication with stuff that we already have elsewhere. We can provide. Probably looking at the visibility and, you know, the flexibility amount you have like some immediate links to say, well, you're running sure, you know, just go back and check into these click sense environment as an example where they can see the original reporting and just count there and see, okay, what the hell is going on? But, you know, that's, what I'm seeing today is blurring some boundaries between different systems that we have, for our setting which is not. 
+
+46:55 | Luiz
+Not per say. 
+
+46:56 | Denis
+A bad thing actually, I probably it's like because it's so omni comprehensive that you can switch them on and off based on what are your needs? But that's just the immediate feedback from, what I'm seeing today, yeah. 
+
+47:08 | Jane
+And so just to add some commentary to that, so it's a couple of things. So we work with quite a few people that they don't do everything big bang. So they might say, okay Planning is the bigger problem at the moment. And so that's the part we want to focus on. We've got, you know, two more years with our current provider and it's working quite well now. So we don't need to change Incentive shortterm or a tool. We've made a decision. We want to stick with that. So just to give you the reference that it doesn't have to be everything end to end included. And then to your second point on the reporting side, which is what we do standardly see. So for example, we see a lot of companies that work with power BI or various other core reporting tools that go across the whole organisation. Now, what we're not trying to do is replace that because we understand it doesn't just affect commissions and it doesn't just affect Planning. It affects absolutely everything, management, reporting, all other else. And so, so what we do is we do actually directly integrate with solutions like power BI. Luiz, the other ones are escaping my mind, but we have a few other reporting Tableau, for example. Yeah. And so we integrate directly with them because we also find that there are some core information elements. So as Luiz was showing, so performance metrics, you know, what are we paying for compensation? What's our predicted pay for compensation for the year? And we can push that data directly back into your power BI, or your Tableau to integrate and have that detail go flowing through to the right people. So I'd say whilst reporting can be specified for various different levels and we can do some really creative things. We're not here to completely replace if that's not what you want to do. I also know some customers that don't use our reporting at all and they choose that. Okay, we want to keep it just for Incentives and we'll keep that close to our team. But all the other data we push and allow other teams to manage it. 
+
+48:56 | Denis
+I understand that in sense, I understood the flexibility of the solution itself that's like, I think it's one of your core value for sure. And I can see that transparently, in the, in the tool that you have and how you can enable certain modules to be or not be available based on what you need to in our setting, the system that we have in place for me. This is a core Incentive compensation purely Incentive compensation for admin users mostly to manage the whole Incentive plan that they can providing visibility on, you know, all the users impacted of what status of their Incentive and some scenario Planning. This is today the setting that we have and this is where, you know, possibly I can draw a line and this is what the, this, has to deliver upon. And then from there, you know, surely you can do building blocks and add other elements on top of what would be a full based on, you know, my current understanding of what cannot value based on the strategy that we're going to versus also what you can see after, our relationship is established to say, okay, well, I guess all about this because I think we can, you can surely bring somebody there. Yeah. But yeah, it's the flexibility there. I think it's a core value which I'm taking out of today's discussion. Thanks of that. 
+
+50:21 | Jane
+No, that's great. And so, I know we are at time now. So what I'd suggest is we have had the session recorded and we can show you some more slides to just take in the information. I know you've got the weekend next, perhaps take a couple of days to reflect on it. If you've got any questions or comments and then we arrange another short connect to answer any further questions. And then. 
+
+50:41 | Denis
+it with my team with my team as well. Do you have, any demo environment or sandbox environment you can provide access to just for us to play a little bit with it or is that out of the world as? 
+
+50:54 | Jane
+So we do a couple of things. And so what I can provide you, I'll share some links and it's like a click through demo environment that you? 
+
+51:01 | Denis
+That. 
+
+51:02 | Jane
+you can have the visibility of it, but down the road, if it is something that you want to explore in more detail, we offer what we call a handson workshop. So we'd come on site with you. We'd spend the day and each of the teams will get their own sandbox. We'll give them a bit of a guided training experience, but they can get to grips with, you know, building reports or loads. 
+
+51:20 | Denis
+The more is fine because what we do normally, we're both present in all the demos. So then we can combat soft ideas, you know, what we see stuff like that, the demo, the demos will be just fine, you know, to do that. 
+
+51:33 | Jane
+I can send you. 
+
+51:34 | Denis
+That. 
+
+51:34 | Jane
+Today, no problem. 
+
+51:35 | Denis
+Yeah, then leave it with me. We can, we can follow up accordingly after we've done that. She's off for the whole week next week as well. So that has to be the week after. Yeah, no problem at. So, yeah, yeah, very good. Thanks. Okay. 
+
+51:48 | Jane
+I'll get that sent over. No worries at all. Thank you so much for your time. We appreciate it. 
+
+51:53 | Denis
+Thank you Luiz for the walk through super. I appreciate it. Thanks a lot. 
+
+51:58 | Jane
+You're on mute, Luiz, but yes. 
+
+51:59 | Luiz
+Thank you very much for your time. 
+
+52:00 | Jane
+And take care bye all. 
+
+52:03 | Luiz
+Right. Bye. 
