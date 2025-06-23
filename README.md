@@ -67,10 +67,10 @@ run.py
 
 This project is based on *The Six Habits of Highly Effective Sales Engineers* by Chris White. All credit for the coaching framework and best practices belongs to the original author.
 
-freeCodeCamp.org, 2024. RAG Fundamentals and Advanced Techniques – Full Course. [Online]. [Accessed 22 June 2025]. Available from: https://www.youtube.com/watch?v=ea2W8IogX80 
-Nello, E. 2024. How to build a Python Flask RAG Chat with documents. [Online]. Medium. [Accessed 22 June 2025]. Available from: https://medium.com/thedeephub/how-to-build-a-python-flask-rag-chat-with-documents-cf5de7b05399
-Pallets. 2025. Templating with Jinja. In: Flask Documentation. [Online]. [Accessed 22 June 2025]. Available from: https://flask.palletsprojects.com/en/stable/templating/
-Grinberg, M. 2020. Handling file uploads with Flask. [Online]. Miguel Grinberg Blog. [Accessed 22 June 2025]. Available from: https://blog.miguelgrinberg.com/post/handling-file-uploads-with-flask
-Chart.js. 2025. Chart.js. [Online]. [Accessed 22 June 2025]. Available from: https://www.chartjs.org/docs/latest/
+* freeCodeCamp.org, 2024. RAG Fundamentals and Advanced Techniques – Full Course. [Online]. [Accessed 22 June 2025]. Available from: https://www.youtube.com/watch?v=ea2W8IogX80 
+* Nello, E. 2024. How to build a Python Flask RAG Chat with documents. [Online]. Medium. [Accessed 22 June 2025]. Available from: https://medium.com/thedeephub/how-to-build-a-python-flask-rag-chat-with-documents-cf5de7b05399
+* Pallets. 2025. Templating with Jinja. In: Flask Documentation. [Online]. [Accessed 22 June 2025]. Available from: https://flask.palletsprojects.com/en/stable/templating/
+* Grinberg, M. 2020. Handling file uploads with Flask. [Online]. Miguel Grinberg Blog. [Accessed 22 June 2025]. Available from: https://blog.miguelgrinberg.com/post/handling-file-uploads-with-flask
+* Chart.js. 2025. Chart.js. [Online]. [Accessed 22 June 2025]. Available from: https://www.chartjs.org/docs/latest/
 
 
