@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo AI Scoring System</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; text-align: center; }
+    h1 { margin: 2rem 0 1rem 0; font-size: 2rem; }
+    .chart-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin: 1rem auto 2rem auto; max-width: 1200px; }
+    .metric { background-color: white; border-radius: 12px; padding: 1.25rem; width: 140px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); }
+    .metric canvas { width: 85% !important; height: auto !important; margin: 0 auto; }
+    .metric-name { margin-top: 0.5rem; font-weight: bold; font-size: 1rem; }
+    .details-section { text-align: left; max-width: 900px; margin: 3rem auto; padding: 1rem 2rem; background-color: #ffffff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+    .details-section h2 { font-size: 1.5rem; color: #0B2C59; }
+    .details-section p { font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.5rem; }
+    .footer { margin-top: 3rem; padding-bottom: 2rem; }
+    .footer-text { color: #555; margin: 1rem 0 0.25rem 0; }
+    .footer img { height: 60px; margin: 0 0.5rem; vertical-align: middle; }
+  </style>
+</head>
+<body>
+{% set filename = filename or request.args.get('filename') %}
+<h1>Demo AI Scoring System</h1>
+
+<div class="chart-container">
+  {% for name, value in results.metric_scores.items() %}
+  <div class="metric">
+    <canvas id="{{ name }}Chart"></canvas>
+    <div class="metric-name">{{ name|capitalize }}</div>
+  </div>
+  {% endfor %}
+  <div class="metric">
+    <canvas id="overallChart"></canvas>
+    <div class="metric-name">Overall</div>
+  </div>
+</div>
+
+<div class="text-center my-4">
+  <a href="{{ url_for('scoring_summary', filename=filename) }}" class="btn btn-outline-primary">
+    ← Back to Summary
+  </a>
+</div>
+
+
+{% for name, data in results.per_metric_explanations.items() %}
+<div class="details-section">
+  <h2>{{ name|capitalize }} ({{ data.score }})</h2>
+  <p><strong>Score Explanation:</strong> {{ data.explanation | safe }}</p>
+  <p><strong>Best Quote ({{ data.best_quote_author }}):</strong></p>
+  <blockquote class="blockquote">{{ data.best_quote }}</blockquote>
+  <p><em>{{ data.best_quote_reason }}</em></p>
+  {% if data.worst_quote %}
+  <p><strong>Worst Quote ({{ data.worst_quote_author }}):</strong></p>
+  <blockquote class="blockquote text-danger">{{ data.worst_quote }}</blockquote>
+  <p><em>{{ data.worst_quote_reason }}</em></p>
+  {% endif %}
+</div>
+{% endfor %}
+
+<div class="text-center my-4">
+  <a href="{{ url_for('scoring_summary', filename=filename) }}" class="btn btn-outline-primary">
+    ← Back to Summary
+  </a>
+</div>
+
+
+<div class="footer">
+  <p class="footer-text">This analysis and feedback is powered by:</p>
+  <img src="../static/others/techmastery.webp" alt="Tech Sales Mastery logo">
+  <img src="../static/others/6-habits-bookcover.webp" alt="Six Habits Book Cover">
+  <p class="footer-text">
+    Based on the book <strong>The Six Habits of Highly Effective Sales Engineers</strong> by Chris White.
+  </p>
+</div>
+
+<script>
+  function createGauge(id, value, color) {
+    new Chart(document.getElementById(id), {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+          data: [value, 5 - value],
+          backgroundColor: [color, '#e0e0e0'],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        rotation: -90,
+        circumference: 180,
+        cutout: '70%',
+        plugins: {
+          legend: { display: false },
+          tooltip: { enabled: false }
+        }
+      }
+    });
+  }
+
+  {% for name, value in results.metric_scores.items() %}
+    createGauge("{{ name }}Chart", {{ value }}, "#0B2C59");
+  {% endfor %}
+  createGauge("overallChart", {{ results.overall_score }}, "#3DB4E7");
+</script>
+
+</body>
+</html>

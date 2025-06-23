@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo AI Scoring System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .logo-option {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .logo-option:hover {
+            background-color: #e9ecef;
+            transform: scale(1.02);
+        }
+        .logo-option img {
+            height: 48px;
+            margin-bottom: 10px;
+        }
+        .participant-tag { width: 100%; }
+        .section-title { font-weight: bold; margin-top: 30px; }
+        .stars { font-size: 2rem; color: #1b2a41; }
+        .score-number {
+            font-size: 5rem;
+            font-weight: bold;
+            color: #1b2a41;
+        }
+        #radarChart {
+            max-width: 280px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body class="bg-light">
+<div class="container py-5">
+    <h1 class="mb-4 text-center">Demo AI Scoring System</h1>
+
+    <div class="card p-4 mb-4 shadow-sm">
+        <h5 class="text-center mb-4">Select Your Demo Transcript</h5>
+        {% if filename %}
+            <p class="text-center text-success">
+            Transcript loaded: <strong>{{ filename }}</strong>
+            </p>
+        {% endif %}
+        <div class="row text-center">
+            <div class="col-md-3 mb-3">
+
+                <form action="{{ url_for('upload_transcript') }}" method="post" enctype="multipart/form-data">
+                    <label for="fileUpload" class="logo-option">
+                    <img src="{{ url_for('static', filename='icons/upload.svg') }}" alt="From File">
+                    <div>From File</div>
+                    <input type="file" name="transcript" id="fileUpload" style="display: none;" onchange="this.form.submit();">
+                    </label>
+                </form>
+
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="logo-option">
+                    <img src="{{ url_for('static', filename='icons/teams.svg') }}" alt="From File">
+                    <div>Microsoft</div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="logo-option">
+                    <img src="{{ url_for('static', filename='icons/zoom.svg') }}" alt="From File">
+                    <div>Zoom</div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="logo-option">
+                    <img src="{{ url_for('static', filename='icons/gong.svg') }}" alt="From File">
+                    <div>Gong</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="card p-4 mb-4">
+        <h4>Evaluation Metrics & Weights</h4>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">Clarity <span>25%</span></li>
+            <li class="list-group-item d-flex justify-content-between">Engagement <span>20%</span></li>
+            <li class="list-group-item d-flex justify-content-between">Relevance <span>30%</span></li>
+            <li class="list-group-item d-flex justify-content-between">Structure <span>15%</span></li>
+            <li class="list-group-item d-flex justify-content-between">Confidence <span>10%</span></li>
+        </ul>
+    </div>
+
+    <div class="text-center mb-4">
+        <button class="btn btn-primary btn-lg">Score Now</button>
+    </div>
+
+  <div class="card p-4 mb-4">
+        <h4 class="section-title">Participants</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="table-light">
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice Johnson</td>
+                        <td>
+                            <select class="form-select participant-tag">
+                                <option selected>SE</option>
+                                <option>Customer</option>
+                                <option>Other</option>
+                            </select>
+                        </td>
+                        <td>Bob Smith</td>
+                        <td>
+                            <select class="form-select participant-tag">
+                                <option>SE</option>
+                                <option selected>Customer</option>
+                                <option>Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Carol Lee</td>
+                        <td>
+                            <select class="form-select participant-tag">
+                                <option>SE</option>
+                                <option selected>Customer</option>
+                                <option>Other</option>
+                            </select>
+                        </td>
+                        <td>David Ray</td>
+                        <td>
+                            <select class="form-select participant-tag">
+                                <option>SE</option>
+                                <option selected>Customer</option>
+                                <option>Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Evelyn West</td>
+                        <td>
+                            <select class="form-select participant-tag">
+                                <option>SE</option>
+                                <option selected>Customer</option>
+                                <option>Other</option>
+                            </select>
+                        </td>
+                        <td>Frank Moore</td>
+                        <td>
+                            <select class="form-select participant-tag">
+                                <option>SE</option>
+                                <option>Customer</option>
+                                <option selected>Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-outline-secondary">Re-run</button>
+        </div>
+    </div>
+
+ 
+
+
+
+    <div class="row mb-4 align-items-center">
+        <div class="col-md-6 text-center">
+            <h4 class="section-title">Overall Score</h4>
+            <div class="score-number">4.4</div>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        </div>
+        <div class="col-md-6 text-center">
+            <canvas id="radarChart"></canvas>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h4 class="section-title">Summary Feedback</h4>
+            <div class="card p-3">
+                <p>Alice demonstrated strong clarity and product knowledge, but engagement could be improved by inviting more customer input.</p>
+                <a href="{{ url_for('scoring_details') }}" class="btn btn-link mt-2">See detailed feedback</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('radarChart').getContext('2d');
+    const radarChart = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Clarity', 'Engagement', 'Relevance', 'Structure', 'Confidence'],
+            datasets: [{
+                data: [4, 3, 4, 4, 4],
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                pointBackgroundColor: 'rgba(54, 162, 235, 1)'
+            }]
+        },
+        options: {
+            plugins: {
+                legend: { display: false }
+            },
+            scales: {
+                r: {
+                    min: 0,
+                    max: 5,
+                    ticks: { stepSize: 1 }
+                }
+            }
+        }
+    });
+</script>
+
+<footer style="margin-top: 60px; padding: 20px; background-color: #f9f9f9; text-align: center; font-size: 0.9rem; color: #555;">
+  <p>
+    This analysis and feedback is powered by:
+  </p>
+
+  <div style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; margin: 15px 0;">
+    <a href="https://www.techsalesmastery.com/" target="_blank" rel="noopener noreferrer">
+      <img src="{{ url_for('static', filename='others/techmastery.webp') }}" alt="Tech Sales Mastery" style="height: 50px;">
+    </a>
+    <a href="https://www.amazon.co.uk/Habits-Highly-Effective-Sales-Engineers/dp/0578521903" target="_blank" rel="noopener noreferrer">
+      <img src="{{ url_for('static', filename='others/6-habits-bookcover.webp') }}" alt="Six Habits Book" style="height: 80px;">
+    </a>
+  </div>
+
+  <p>
+    Based on the book <strong>The Six Habits of Highly Effective Sales Engineers</strong> by Chris White.
+  </p>
+</footer>
+
+</body>
+</html>
