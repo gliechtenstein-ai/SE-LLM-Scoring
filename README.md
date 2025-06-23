@@ -5,8 +5,21 @@ This project is a prototype evaluation engine that analyzes presales demo transc
 It uses OpenAI models to score performance across customizable metrics, extract quotes for coaching, and consolidate feedback — enabling clear, habit-aligned coaching for Sales Engineers.
 
 ---
+## Test Workbench
 
-## Architecture
+The project has a jupyter notebooks used to test all model Variants. The real results are not published here. Here we have just an example using a anonymized transcription.
+
+A/B testing of model variants:
+* Vanilla GPT: A baseline model without augmentation, generating outputs solely from its pre-trained knowledge.
+* Naive RAG GPT: A retrieval-augmented setup using relevant book chunks injected into prompts, without additional optimization.
+* Advanced RAG GPT: An enhanced RAG variant that dynamically generates retrieval queries using transcript data. It fetches multiple relevant chunks, ranks them by relevance, and injects the top results into the prompt. For this MVP, both query generation and ranking are handled by the same LLM used in the variant.
+* Advanced RAG Gemini: Same RAG logic as above but using Google Gemini 1.5 as the LLM instead of GPT.
+* CAG Gemini: A cache-augmented setup where the entire book content is preloaded into the prompt using Gemini’s extended context window—eliminating runtime retrieval.
+
+
+
+
+## App Architecture
 
 The project is structured following a **three-layer clean architecture**:
 
