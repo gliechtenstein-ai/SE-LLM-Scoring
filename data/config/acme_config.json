@@ -1,0 +1,67 @@
+{
+    "customer_id": "001Acme",
+    "customer_name": "ACME Corp",
+    "metrics": [
+      {
+        "id": "metric01",
+        "name": "clarity",
+        "description": "How clearly the message was communicated to the customer.",
+        "weight": 0.25
+      },
+      {
+        "id": "metric02",
+        "name": "engagement",
+        "description": "Level of interaction and active listening with the customer.",
+        "weight": 0.20
+      },
+      {
+        "id": "metric03",
+        "name": "relevance",
+        "description": "How well the content matched the customer's needs and context.",
+        "weight": 0.30
+      },
+      {
+        "id": "metric04",
+        "name": "structure",
+        "description": "Logical flow and organization of the demo or conversation.",
+        "weight": 0.15
+      },
+      {
+        "id": "metric05",
+        "name": "confidence",
+        "description": "Speaker’s professionalism, tone, and delivery confidence.",
+        "weight": 0.10
+      }
+    ],
+    "coaching_frameworks": [
+      {
+        "name": "six_habits",
+        "context": "The Six Habits of Highly Effective Sales Engineers",
+        "source": "data/processed/knowledge_base/six_habits_chunks.json",
+        "scoring_framework_keys": [
+          "HABIT #1 - PARTNER",
+          "HABIT #2 - PROBE",
+          "HABIT #5 – PERFORM (PART 1)",
+          "HABIT #5 – PERFORM (PART 2)",
+          "HABIT #6 – PERFECT"
+        ]
+      }
+    ],
+    "settings": {
+        "quote_mode": "post",
+        "model": "gpt-3.5-turbo",
+        "max_book_chunks": 3,
+        "scoring_guide": {
+            "description": "Rating scale for each metric from 1 to 5",
+            "scale": [
+                 "5 = Excellent: Fully aligned with best practices",
+                 "4 = Good: Mostly aligned, minor gaps",
+                 "3 = Fair: Inconsistent or partially applied",
+                 "2 = Poor: Major gaps in execution",
+                 "1 = Very Poor: Did not demonstrate this behavior"
+            ],
+            "strictness_note": "Be strict and critical in your evaluation. Only give high scores when the behavior clearly meets expectations."
+         }
+     }
+  }
+  
