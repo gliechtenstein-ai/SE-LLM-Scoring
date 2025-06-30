@@ -26,7 +26,7 @@ The project is structured following a **three-layer clean architecture**:
 ```
 project/
     app/             # Application Layer (UI)
-    services/        # Service Layer (business logic, GPT, orchestration)
+    app/services/    # Service Layer (business logic, GPT, orchestration)
     data/            # Data Layer (raw & processed files only)
 
 ```
