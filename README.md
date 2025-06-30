@@ -33,7 +33,7 @@ project/
 
 * **Data Layer**: Holds all configs, transcripts, and book content (currently file-based; ready for DB later).
 * **Service Layer**: Contains all core logic: config parsing, scoring, quote extraction, and orchestration.
-* **Application Layer**: Streamlit interface (or other UI) for uploading, running, and reviewing analysis.
+* **Application Layer**: UI interface for uploading, running, and reviewing analysis.
 
 ---
 
