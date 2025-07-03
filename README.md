@@ -50,12 +50,13 @@ project/
 ## Technologies
 
 Tools Used and Rationale:
-* Python: Primary language for backend development due to its simplicity, ecosystem support, and strong integration with AI libraries.
-* Flask (Python Web Framework): Lightweight and flexible framework ideal for building a minimal web UI and RESTful services for the MVP stage.
+* Python: Primary language for backend development.
+* Flask (Python Web Framework): Framework for building a minimal web UI and RESTful services for the MVP stage.
 * HTML & JavaScript: Used to build interactive front-end elements for the user interface (e.g., uploading transcripts, displaying charts, formatting results).
-* ChromaDB (Vector Database): Chosen for its speed, simplicity, and native support for local and persistent vector storage — ideal for small-to-medium domain-specific datasets.
+* ChromaDB (Vector Database): Chosen for its speed and simplicity, and support for local and persistent vector storage
 * text-embedding-3-small (OpenAI): Embedding model chosen for its performance-to-cost ratio and compatibility with ChromaDB.
 * OpenAI API (GPT-4o): Provides reliable and well-documented LLM access; used for Vanilla, RAG, and Advanced RAG variants.
+* Gemini API: (Test Workbench only). Provides reliable and well-documented LLM access; used for and Advanced RAG and CAG variants.
 
 
 ---
